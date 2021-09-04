@@ -1,0 +1,19 @@
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.fa-google-plus:before {
+    color: #fff;
+}
+.fa-facebook-f:before, .fa-facebook:before {
+    color: #fff;
+}
+.fa-instagram:before {
+    color: #fff;
+}
+.fa-envelope-o:before {
+    color: #fff;
+}
+.footer{
+    background-color: #38A3A5;
+}

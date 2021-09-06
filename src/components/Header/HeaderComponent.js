@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import {Collapse, Jumbotron, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem} from "reactstrap";
+import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem} from "reactstrap";
 import { NavLink } from 'react-router-dom';
 import './header.css'
-
 class Header extends Component {
+
     constructor(props) {
         super(props);
 
@@ -50,16 +50,7 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
-                <Jumbotron className="my-jumbotron text-white">
-                    <div className="container">
-                        <div className="row row-header">
-                            <div className="col-12 col-sm-6">
-                                <h1>Ecommerce Website</h1>
-                                <p>World's best online shopping website!</p>
-                            </div>
-                        </div>
-                    </div>
-                </Jumbotron>
+
             </div>
         );
     }

@@ -1,7 +1,15 @@
 import React, {Component} from "react";
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem} from "reactstrap";
-import { NavLink } from 'react-router-dom';
+import {
+    Collapse,
+    Nav,
+    Navbar,
+    NavbarBrand,
+    NavbarToggler,
+    NavItem
+} from "reactstrap";
+import {NavLink} from 'react-router-dom';
 import './header.css'
+
 class Header extends Component {
 
     constructor(props) {
@@ -10,7 +18,7 @@ class Header extends Component {
         this.toggleNav = this.toggleNav.bind(this);
         this.state = {
             isNavOpen: false,
-            isSelected:false
+            isSelected: false
         };
     }
 
@@ -20,17 +28,35 @@ class Header extends Component {
         });
     }
 
-    selected(){
+    selected() {
         this.setState({
             isSelected: !this.state.isSelected
         });
     }
+
     render() {
-        return(
-            <div>
+        return (
+            <>
+                <div className="container">
+                    <div className="row d-flex mt-2">
+                        <div className="col-md-2 col-3 justify-content-end">
+                            <p>ENGLISH</p>
+                        </div>
+                        <div className="col-md-2 col-2 justify-content-center">
+                            <p>PKR</p>
+                        </div>
+                        <div className="col-md-4 col-7">
+                            <p><i className="fa fa-phone fa-lg"></i> Call Us 090078601</p>
+                        </div>
+                        <div className="col-md-4 col-12">
+                            <h6><i className="fa fa-shopping-cart"></i> Free delivery on order over <span className="text-danger">PKR 2000</span></h6>
+                        </div>
+                    </div>
+
+                </div>
                 <Navbar className="my-navbar" dark expand="md">
                     <div className="container">
-                        <NavbarToggler onClick={this.toggleNav} />
+                        <NavbarToggler onClick={this.toggleNav}/>
                         <NavbarBrand className="mr-auto" href="/">Ecommerce Website</NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
@@ -51,7 +77,7 @@ class Header extends Component {
                     </div>
                 </Navbar>
 
-            </div>
+            </>
         );
     }
 }

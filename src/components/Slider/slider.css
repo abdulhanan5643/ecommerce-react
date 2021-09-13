@@ -1,0 +1,24 @@
+
+.carousel-caption h3 {
+    font-size: 5em;
+    color: #000000 !important;
+}
+.carousel-caption p {
+    font-size: 2em;
+    color: #000000 !important;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top:0;
+    bottom: 1.25rem;
+    left: revert;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}

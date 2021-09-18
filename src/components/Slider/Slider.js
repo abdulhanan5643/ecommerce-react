@@ -11,24 +11,24 @@ import './slider.css'
 const items = [
     {
         src: require('../../shared/images/slider/slider.jpg').default,
-        id:1,
+        id: 1,
         altText: 'Stylish',
         caption: 'Stylish',
-        description:'30% OFF'
+        description: '30% OFF'
     },
     {
         src: require('../../shared/images/slider/slider1.webp').default,
-        id:2,
+        id: 2,
         altText: 'Healthy',
         caption: 'Healthy',
-        description:'55% OFF'
+        description: '55% OFF'
     },
     {
         src: require('../../shared/images/slider/slider2.webp').default,
-        id:3,
+        id: 3,
         altText: 'Natural',
         caption: 'Natural',
-        description:'45% OFF'
+        description: '45% OFF'
     }
 ];
 
@@ -67,12 +67,16 @@ const Slider = (props) => {
     });
 
     return (
-        <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-            {slides}
-            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-        </Carousel>
+        <div className="row">
+            <div className="col-12">
+                <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+                    <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+                    {slides}
+                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+                    <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+                </Carousel>
+            </div>
+        </div>
     );
 }
 

@@ -13,12 +13,64 @@
 }
 .carousel-caption {
     position: absolute;
-    right: 15%;
-    top:0;
+    right: 17%;
     bottom: 1.25rem;
-    left: revert;
+    left: 54%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
+}
+@media only screen and (max-width: 2560px) {
+    .carousel-caption {
+        top: 212px;
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .carousel-caption {
+        top: 136px;
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .carousel-caption {
+        top: 104px;
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 786px) {
+    .carousel-caption {
+        top: 74px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .d-none {
+        display: block !important;
+    }
+    .carousel-caption {
+        top: 35px;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .d-none {
+        display: block !important;
+    }
+    .carousel-caption {
+        top: 30px;
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .d-none {
+        display: block !important;
+    }
+    .carousel-caption {
+        top: 20px;
+        font-size: 5px;
+    }
 }

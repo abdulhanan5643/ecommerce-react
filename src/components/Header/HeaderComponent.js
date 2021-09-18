@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component, useState} from "react";
 import {
     Collapse,
     Nav,
@@ -9,6 +9,7 @@ import {
 } from "reactstrap";
 import {NavLink} from 'react-router-dom';
 import './header.css'
+
 
 class Header extends Component {
 
@@ -28,12 +29,6 @@ class Header extends Component {
         });
     }
 
-    selected() {
-        this.setState({
-            isSelected: !this.state.isSelected
-        });
-    }
-
     render() {
         return (
             <>
@@ -49,7 +44,8 @@ class Header extends Component {
                             <p><i className="fa fa-phone fa-lg"></i> Call Us 090078601</p>
                         </div>
                         <div className="col-md-4 col-12">
-                            <h6><i className="fa fa-shopping-cart"></i> Free delivery on order over <span className="text-danger">PKR 2000</span></h6>
+                            <h6><i className="fa fa-shopping-cart"></i> Free delivery on order over <span
+                                className="text-danger">PKR 2000</span></h6>
                         </div>
                     </div>
 
@@ -57,9 +53,25 @@ class Header extends Component {
                 <Navbar className="my-navbar" dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav}/>
-                        <NavbarBrand className="mr-auto" href="/"><img src={require('../../shared/images/logo.png').default} height="50" width="50" alt='Ecommerce Website' /></NavbarBrand>
+                        <NavbarBrand className="mr-auto logo" href="/"><img
+                            src={require('../../shared/images/logo.png').default} height="50" width="50"
+                            alt='Ecommerce Website'/></NavbarBrand>
+                        <Nav navbar className="ms-auto icons">
+                            <NavItem>
+                                <NavLink className="nav-link" exact={true} to='/search'><i
+                                    className="fa fa-search"></i></NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" exact={true} to='/wishlist'><i
+                                    className="fa fa-heart"></i></NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" exact={true} to='/login'><i
+                                    className="fa fa-user"></i></NavLink>
+                            </NavItem>
+                        </Nav>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar className="links">
                                 <NavItem>
                                     <NavLink className="nav-link" exact={true} to='/home'>Home</NavLink>
                                 </NavItem>

@@ -1,3 +1,54 @@
+.logo{
+    margin-right: auto;
+    margin-left: 25px;
+}
+.icons{
+    margin-right: 9px;
+    flex-direction: row;
+    order: 2;
+}
+.links{
+    margin-left: 50px;
+    order: 1;
+}
 .my-navbar{
     background-color: #15A488;
+}
+@media only screen and (max-width: 425px) {
+    .icons{
+        order: 0;
+    }
+    .links{
+        order: 0;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .icons{
+        order: 0;
+    }
+    .links{
+        order: 0;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .icons{
+        order: 0;
+    }
+    .links{
+        order: 0;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding-right: 8px;
+        padding-left: 8px;
+    }
 }

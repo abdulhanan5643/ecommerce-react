@@ -20,6 +20,7 @@
     }
     .links{
         order: 0;
+        margin-left: 0;
     }
     .navbar-expand-md .navbar-nav .nav-link{
         padding-right: 12px;
@@ -33,6 +34,7 @@
     }
     .links{
         order: 0;
+        margin-left: 0;
     }
     .navbar-expand-md .navbar-nav .nav-link{
         padding-right: 10px;
@@ -46,6 +48,7 @@
     }
     .links{
         order: 0;
+        margin-left: 0;
     }
     .navbar-expand-md .navbar-nav .nav-link{
         padding-right: 8px;

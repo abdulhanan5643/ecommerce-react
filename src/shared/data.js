@@ -7,6 +7,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'top',
         featured: false,
+        amount:10,
         hot: false,
         size: {
             xs: 'XS',
@@ -26,6 +27,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'top',
         featured: true,
+        amount:15,
         hot: false,
         size: {
             xs: 'XS',
@@ -45,6 +47,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'middle',
         featured: false,
+        amount:18,
         hot: true,
         size: {
             xs: 'XS',
@@ -64,6 +67,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'last',
         featured: true,
+        amount:12,
         hot: false,
         size: {
             xs: 'XS',
@@ -83,6 +87,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: false,
+        amount:11,
         hot: false,
         size: {
             xs: 'XS',
@@ -102,6 +107,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'middle',
         featured: false,
+        amount:1,
         hot: false,
         size: {
             xs: 'XS',
@@ -121,6 +127,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'middle',
         featured: false,
+        amount:10,
         hot: false,
         size: {
             xs: 'XS',
@@ -140,6 +147,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: false,
+        amount:35,
         hot: true,
         size: {
             xs: 'XS',
@@ -159,6 +167,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: true,
+        amount:40,
         hot: false,
         size: {
             xs: 'XS',
@@ -178,6 +187,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'middle',
         featured: false,
+        amount:54,
         hot: false,
         size: {
             xs: 'XS',
@@ -197,6 +207,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'top',
         featured: false,
+        amount:21,
         hot: false,
         size: {
             xs: 'XS',
@@ -216,6 +227,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'last',
         featured: true,
+        amount:86,
         hot: true,
         size: {
             xs: 'XS',
@@ -235,6 +247,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'last',
         featured: true,
+        amount:45,
         hot: false,
         size: {
             xs: 'XS',
@@ -254,6 +267,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'middle',
         featured: false,
+        amount:23,
         hot: true,
         size: {
             xs: 'XS',
@@ -273,6 +287,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'middle',
         featured: false,
+        amount:98,
         hot: true,
         size: {
             xs: 'XS',
@@ -292,6 +307,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'middle',
         featured: false,
+        amount:78,
         hot: true,
         size: {
             xs: 'XS',
@@ -311,6 +327,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: true,
+        amount:87,
         hot: true,
         size: {
             xs: 'XS',
@@ -330,6 +347,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'top',
         featured: false,
+        amount:65,
         hot: false,
         size: {
             xs: 'XS',
@@ -349,6 +367,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: false,
+        amount:54,
         hot: false,
         size: {
             xs: 'XS',
@@ -368,6 +387,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'last',
         featured: true,
+        amount:76,
         hot: true,
         size: {
             xs: 'XS',
@@ -387,6 +407,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'top',
         featured: false,
+        amount:45,
         hot: false,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -398,6 +419,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'middle',
         featured: true,
+        amount:28,
         hot: false,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -409,6 +431,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'middle',
         featured: false,
+        amount:87,
         hot: true,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -420,6 +443,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: false,
+        amount:56,
         hot: false,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -431,6 +455,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'middle',
         featured: true,
+        amount:76,
         hot: false,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -442,6 +467,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: false,
+        amount:7,
         hot: true,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -453,6 +479,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'top',
         featured: true,
+        amount:81,
         hot: true,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -464,6 +491,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: true,
+        amount:53,
         hot: false,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -475,6 +503,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'last',
         featured: true,
+        amount:31,
         hot: false,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -486,6 +515,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'middle',
         featured: true,
+        amount:49,
         hot: false,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -497,6 +527,7 @@ const PRODUCTS = [
         new: false,
         ranking: 'top',
         featured: false,
+        amount:90,
         hot: true,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -508,6 +539,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'last',
         featured: false,
+        amount:23,
         hot: false,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     },
@@ -519,6 +551,7 @@ const PRODUCTS = [
         new: true,
         ranking: 'top',
         featured: true,
+        amount:76,
         hot: true,
         description: "Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco."
     }

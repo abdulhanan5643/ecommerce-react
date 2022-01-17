@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import {
     Collapse,
     Nav,
@@ -7,7 +7,7 @@ import {
     NavbarToggler,
     NavItem
 } from "reactstrap";
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './header.css'
 
 
@@ -52,10 +52,10 @@ class Header extends Component {
                 </div>
                 <Navbar className="my-navbar" dark expand="md">
                     <div className="container">
-                        <NavbarToggler onClick={this.toggleNav}/>
+                        <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto logo" href="/"><img
                             src={require('../../shared/images/logo.png').default} height="50" width="50"
-                            alt='Ecommerce Website'/></NavbarBrand>
+                            alt='Ecommerce Website' /></NavbarBrand>
                         <Nav navbar className="ms-auto icons">
                             <NavItem>
                                 <NavLink className="nav-link" exact={true} to='/search'><i
@@ -68,6 +68,10 @@ class Header extends Component {
                             <NavItem>
                                 <NavLink className="nav-link" exact={true} to='/login'><i
                                     className="fa fa-user"></i></NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" exact={true} to='/cart'><i
+                                    className="fa fa-shopping-cart"></i></NavLink>
                             </NavItem>
                         </Nav>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
